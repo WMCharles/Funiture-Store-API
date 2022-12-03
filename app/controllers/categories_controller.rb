@@ -13,7 +13,7 @@ class CategoriesController < ApplicationController
     # GET /categories/:id
     def show
         category = Category.find(params[:id])
-        render json: category, status: :ok
+        render json: category, status: :ok, serializer: CategoryShowSerializer
     end
 
     # POST /categories

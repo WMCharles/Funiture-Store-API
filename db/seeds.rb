@@ -22,4 +22,8 @@ product_categories = ProductCategory.create([
     {product_id:4, category_id:1}
 ])
 
+users = User.create([
+    {username: "admin", email: "admin@example.com", password: "1234567xx", password_confirmation: "1234567xx"}
+])
+
 puts "Done Seeding 🍂️"

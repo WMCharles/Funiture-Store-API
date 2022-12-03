@@ -26,7 +26,7 @@ class CategoriesController < ApplicationController
     def update
         category = Category.find(params[:id])
         category.update!(category_params)
-        render json: category, status: :ok
+        render json: category, status: :created
     end
 
     # DELETE /categories/:id

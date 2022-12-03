@@ -13,7 +13,7 @@ class ProductsController < ApplicationController
     # GET /products/:id
     def show
         product = Product.find(params[:id])
-        render json: product, status: :ok
+        render json: product, status: :ok, serializer: ProductReviewSerializer, include: ['reviews', 'reviews.user']
     end
 
     # POST /products

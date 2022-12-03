@@ -23,7 +23,15 @@ product_categories = ProductCategory.create([
 ])
 
 users = User.create([
-    {username: "admin", email: "admin@example.com", password: "1234567xx", password_confirmation: "1234567xx"}
+    {username: "admin", email: "admin@example.com", password: "1234567xx", password_confirmation: "1234567xx"},
+    {username: "xo4x7", email: "chalo@example.com", password: "1234567xx", password_confirmation: "1234567xx"}
+])
+
+reviews = Review.create([
+    {rating:3, comment: "How much do you change?", product_id:1, user_id:2},
+    {rating:4, comment: "How much do you change for delivery outside Nairobi?", product_id:2, user_id:1},
+    {rating:5, comment: "How much do you change for repairs?", product_id:3, user_id:2},
+    {rating:5, comment: "How much do you change for training?", product_id:4, user_id:1}
 ])
 
 puts "Done Seeding 🍂️"

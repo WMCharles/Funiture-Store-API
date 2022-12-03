@@ -6,7 +6,7 @@ class ProductCategoriesController < ApplicationController
 
     # GET /product_categories
     def index 
-        product_categories = ProductCategories.all 
+        product_categories = ProductCategory.all 
         render json: product_categories, status: :ok
     end
 

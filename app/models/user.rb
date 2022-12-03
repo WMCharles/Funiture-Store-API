@@ -8,4 +8,8 @@ class User < ApplicationRecord
     validates :email, presence: true, uniqueness: true
     validates :password, presence: true, length: { minimum: 8 }
     
+    # Associations
+    has_many :products
+    has_many :reviews
+    
 end

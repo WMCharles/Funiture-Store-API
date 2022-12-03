@@ -15,4 +15,11 @@ categories = Category.create([
     {name:"Bedroom", description: "Funiture intended for user in the bedroom."}
 ])
 
+product_categories = ProductCategory.create([
+    {product_id:1, category_id:2},
+    {product_id:2, category_id:3},
+    {product_id:3, category_id:4},
+    {product_id:4, category_id:1}
+])
+
 puts "Done Seeding 🍂️"

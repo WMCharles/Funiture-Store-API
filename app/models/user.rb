@@ -9,7 +9,6 @@ class User < ApplicationRecord
     validates :password, presence: true, length: { minimum: 8 }
     
     # Associations
-    has_many :products
     has_many :reviews
     
 end

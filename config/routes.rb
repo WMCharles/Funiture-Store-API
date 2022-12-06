@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   resources :product_categories, only: [:index, :show, :create, :update, :destroy]
   resources :reviews, only: [:index, :show, :create, :destroy]
   
+  # get users 
+  get '/users', to: 'users#index'
+
   # Authentication
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'

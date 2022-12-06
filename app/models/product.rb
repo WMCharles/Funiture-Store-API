@@ -6,4 +6,7 @@ class Product < ApplicationRecord
     validates :price, presence: true
     validates :image_url, presence: true
 
+    # associations 
+    belongs_to :category
+    has_many :reviews, dependent: :destroy
 end

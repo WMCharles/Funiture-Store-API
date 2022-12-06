@@ -23,8 +23,8 @@ product_categories = ProductCategory.create([
 ])
 
 users = User.create([
-    {username: "admin", email: "admin@example.com", password: "1234567xx", password_confirmation: "1234567xx"},
-    {username: "xo4x7", email: "chalo@example.com", password: "1234567xx", password_confirmation: "1234567xx"}
+    {username: "admin", email: "admin@example.com", password: "1234567xx", password_confirmation: "1234567xx", role:"admin"},
+    {username: "xo4x7", email: "chalo@example.com", password: "1234567xx", password_confirmation: "1234567xx", role:"visitor"},
 ])
 
 reviews = Review.create([

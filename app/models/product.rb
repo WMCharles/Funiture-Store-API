@@ -3,7 +3,7 @@ class Product < ApplicationRecord
     # Validations
     validates :title, presence: true
     validates :description, length: {minimum: 50}
-    validates :price, presence: true
+    validates :price, numericality: {greater_than: 0}
     validates :image_url, presence: true
 
     # associations 

@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     end
 
     # POST /users
-    def create 
+    def create
         user = User.create(user_params)
         if user.valid?
             session[:user_id] = user.id

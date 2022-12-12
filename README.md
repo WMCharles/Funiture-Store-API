@@ -25,26 +25,26 @@ The Furniture Shop API allows developers to access and integrate the functionali
 
 ## Endpoints:
 
-    1. GET /products - This endpoint returns a list of all the products available in the furniture shop.
+1. `/products` - This endpoint returns a list of all the products available in the furniture shop.
 
-    2. GET /products/:id - This endpoint returns the details of a specific product based on its id.
+2. `/products/:id` - This endpoint returns the details of a specific product based on its id.
 
-    3. GET /categories - This endpoint returns a list of all the categories of products available in the furniture shop.
+3. `/categories` - This endpoint returns a list of all the categories of products available in the furniture shop.
 
-    4. POST /signup - This endpoint is used to create a new account for the user in the furniture shop.
+4. `/signup` - This endpoint is used to create a new account for the user in the furniture shop.
 
-    5. POST /login - This endpoint is used to log in to the user's account in the furniture shop.
+5. `/login` - This endpoint is used to log in to the user's account in the furniture shop.
 
-    6. GET /me - This endpoint keeps the user logged in using session cookies
+6. `/me` - This endpoint keeps the user logged in using session cookies
 
-    7. POST /logout - This endpoint is used to log out from the user's account in the furniture shop.
+7. `/logout` - This endpoint is used to log out from the user's account in the furniture shop.
 
 
 ## Request parameters:
 
-1. /products - None
+1. `/products` - None
 
-2. /products/:id - id (required) - The unique ID of the product to retrieve.
+2. `/products/:id` - id (required) - The unique ID of the product to retrieve.
 
 3. /signup - username (required) - The desired username for the new account. Password (required) - The desired password for the new account. Email (required) - The email address associated with the new account.
 
@@ -57,7 +57,7 @@ The Furniture Shop API allows developers to access and integrate the functionali
 }
 ```
 
-4. /login - username (required) - The username of the account to log in to.
+4. `/login` - username (required) - The username of the account to log in to.
 password (required) - The password of the account to log in to.
 
 ```
@@ -67,13 +67,13 @@ password (required) - The password of the account to log in to.
 }
 ```
 
-5. /logout - None
+5. `/logout` - None
 
-6. /categories - None
+6. `/categories` - None
 
 ## Response format:
 
-1. GET /products - An array of objects, each representing a furniture product in the shop.
+1. `GET /products` - An array of objects, each representing a furniture product in the shop.
 ```
 [
   {
@@ -99,7 +99,7 @@ password (required) - The password of the account to log in to.
 ]
 ```
 
-2. GET /products/:id - A single object representing the requested furniture product.
+2. `GET /products/:id` - A single object representing the requested furniture product.
 
 ```
 {
@@ -116,7 +116,7 @@ password (required) - The password of the account to log in to.
 }
 ```
 
-3. GET /categories - An array of objects, each representing a furniture category in the shop.
+3. `GET /categories` - An array of objects, each representing a furniture category in the shop.
 
 ```
 [
@@ -143,10 +143,7 @@ password (required) - The password of the account to log in to.
 ]
 ```
 
-4. /signup - A success (user object) 
-
-
-or error message indicating whether the account was successfully created.
+4. `POST /signup` - A success (user object) or error message indicating whether the account was successfully created.
 
 ```
 {
@@ -159,7 +156,7 @@ or error message indicating whether the account was successfully created.
 }
 ```
 
-5. /login - A success (user object) or error message indicating whether the user was successfully logged in.
+5. `POST /login` - A success (user object) or error message indicating whether the user was successfully logged in.
 
 ```
 {
@@ -169,7 +166,7 @@ or error message indicating whether the account was successfully created.
 }
 ```
 
-6. /logout - A success or error message indicating whether the user was successfully logged out.
+6. `POST /logout` - A success or error message indicating whether the user was successfully logged out.
 
 
 ## Known Bugs

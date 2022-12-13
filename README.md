@@ -2,7 +2,7 @@
 
 The Furniture Shop API allows developers to access and integrate the functionality of Furniture Shop with other applications. The API allows users to search for and retrieve information about furniture products, as well as place orders for furniture.
 
-# Setup Requirements
+## Setup Requirements
 
     - Git (to clone the repository)
     - Ruby 2.7.4
@@ -12,7 +12,7 @@ The Furniture Shop API allows developers to access and integrate the functionali
     - Postman / Thunderclient (to test the API)
     - Railway/Render CLI (if you want to deploy to railway or render)
 
-# Setup Installation
+## Setup Installation
 
     - Clone the repository
     - Run the following commands in the repository:
@@ -173,7 +173,7 @@ password (required) - The password of the account to log in to.
 
 So far so good there are no bugs related to this project.
 
-# Support and contact details
+## Support and contact details
 
 To make a contribution to the code used or any suggestions you can click on the contact link and email me your suggestions.
 

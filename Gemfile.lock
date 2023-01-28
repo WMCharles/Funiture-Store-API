@@ -110,7 +110,6 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.9-x86_64-linux)
       racc (~> 1.4)
-    pg (1.4.5)
     prettier_print (1.1.0)
     puma (5.6.5)
       nio4r (~> 2.0)
@@ -173,7 +172,6 @@ DEPENDENCIES
   active_model_serializers
   bcrypt (~> 3.1.7)
   debug
-  pg
   puma (~> 5.0)
   rack-cors
   rails (~> 7.0.4)
